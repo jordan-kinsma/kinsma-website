@@ -2,7 +2,7 @@
    Kinsma Corporation — Dark Heritage
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap');
 
 /* ---- Variables ---- */
 :root {
@@ -50,11 +50,12 @@ a { color: inherit; text-decoration: none; }
   padding: 1.1rem 2rem;
 }
 .logo {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.45rem;
+  font-family: 'Space Mono', monospace;
+  font-size: 1.1rem;
   font-weight: 700;
   color: var(--text);
-  letter-spacing: 0.02em;
+  letter-spacing: 0.08em;
+  text-transform: lowercase;
 }
 .logo-k { color: var(--amber-light); }
 
@@ -372,9 +373,11 @@ a { color: inherit; text-decoration: none; }
   flex-wrap: wrap;
 }
 .footer-logo {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.1rem;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.95rem;
   font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: lowercase;
   color: var(--text-muted);
 }
 .footer-logo .logo-k { color: var(--amber-light); }
