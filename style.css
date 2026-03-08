@@ -443,6 +443,8 @@ a { color: inherit; text-decoration: none; }
   .services, .about, .contact { padding: 4rem 0; }
   .services-grid { gap: 0; }
   .about-stats { flex-direction: column; }
+  /* Restore bottom border on last stat — container border is gone at this breakpoint */
+  .stat:last-child { border-bottom: 1px solid var(--border); }
   /* Reduce contact card padding on mobile */
   .contact-card { padding: 1.5rem; gap: 1.5rem; }
 }
