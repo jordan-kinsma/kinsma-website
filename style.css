@@ -60,7 +60,6 @@ a { color: inherit; text-decoration: none; }
   font-weight: 700;
   color: var(--text);
   letter-spacing: 0.08em;
-  text-transform: lowercase;
 }
 .logo-k { color: var(--amber); }
 
@@ -415,7 +414,6 @@ a { color: inherit; text-decoration: none; }
   font-size: 0.95rem;
   font-weight: 700;
   letter-spacing: 0.08em;
-  text-transform: lowercase;
   color: var(--text-muted);
 }
 .footer-logo .logo-k { color: var(--amber); }
@@ -437,10 +435,14 @@ a { color: inherit; text-decoration: none; }
 }
 @media (max-width: 600px) {
   .nav-inner { padding: 0.9rem 1.25rem; }
-  .nav-links { gap: 1.25rem; }
+  .nav-links { gap: 1rem; }
+  /* Hide text nav links on small screens — keep only the CTA */
+  .nav-links a:not(.btn-nav) { display: none; }
   .hero-inner { padding: 8rem 1.25rem 5rem; }
   .container { padding: 0 1.25rem; }
   .services, .about, .contact { padding: 4rem 0; }
   .services-grid { gap: 0; }
   .about-stats { flex-direction: column; }
+  /* Reduce contact card padding on mobile */
+  .contact-card { padding: 1.5rem; gap: 1.5rem; }
 }
