@@ -3,12 +3,11 @@
   <text
     x="16"
     y="22"
-    font-family="Georgia, 'Times New Roman', serif"
+    font-family="'Courier New', Courier, monospace"
     font-weight="700"
-    font-size="18"
-    fill="#F3F0E8"
+    font-size="20"
+    fill="#c4a050"
     text-anchor="middle"
-    letter-spacing="-0.5"
+    letter-spacing="0"
   >k</text>
-  <rect x="9" y="26" width="14" height="1.5" fill="#C8A85D"/>
 </svg>
