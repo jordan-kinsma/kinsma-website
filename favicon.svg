@@ -1,6 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" fill="#1c1e22"/>
-  <line x1="10" y1="6" x2="10" y2="26" stroke="#c4a050" stroke-width="2.5" stroke-linecap="round"/>
-  <line x1="10" y1="16" x2="22" y2="6" stroke="#c4a050" stroke-width="2.5" stroke-linecap="round"/>
-  <line x1="10" y1="16" x2="22" y2="26" stroke="#c4a050" stroke-width="2.5" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <rect width="32" height="32" fill="#13151a"/>
+  <text
+    x="16"
+    y="22"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-weight="700"
+    font-size="18"
+    fill="#F3F0E8"
+    text-anchor="middle"
+    letter-spacing="-0.5"
+  >k</text>
+  <rect x="9" y="26" width="14" height="1.5" fill="#C8A85D"/>
 </svg>
