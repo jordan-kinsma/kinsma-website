@@ -16,10 +16,9 @@ git push
 That's it. GitHub Action handles the rest.
 
 ## Git Remote
-- Repo: https://github.com/jordan-kinsma/kinsma-website
+- Repo: https://github.com/jordan-kinsma/kinsma-website (public)
 - Identity: Jordan Kale / business@kinsma.com (not Jerret — privacy)
-- gh CLI: `~/.local/bin/gh`
-- GH_TOKEN in `~/.bashrc`
+- Auth (new host, from 2026-09-28): PAT lives in repo-local `gh.txt` (gitignored, chmod 600). `~/.gitconfig` carries `[http "https://github.com/"] extraheader = Authorization: Basic <b64>` plus `http.sslCAInfo` — this box sits behind a Squid MITM proxy, so git needs the CA bundle and must send the credential on the first request (the 401→retry prompt path breaks through the proxy). Plain `git push origin main` works; no gh CLI required.
 
 ## DNS (name.com)
 - `www` CNAME → `jolly-sea-0c9014b1e.2.azurestaticapps.net`
